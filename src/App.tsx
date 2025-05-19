@@ -19,7 +19,7 @@ function App() {
   const [modalImage, setModalImage] = useState<Image | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  const pagesCountRef = useRef(0);
+  const pagesCountRef = useRef<number>(0);
 
   useEffect(() => {
     if (!search) return;
